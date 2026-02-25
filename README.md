@@ -21,7 +21,7 @@ El archivo principal `dragon.py` es uno de varios documentos que forman parte de
 ---
 
 ## ⚙ Requisitos
-- Python 3.10+  
+- Python 3.13+  
 - Git instalado  
 - Acceso a GitHub (o cualquier plataforma de repositorios)  
 - Librerías necesarias en `requirements.txt` (si aplican)
