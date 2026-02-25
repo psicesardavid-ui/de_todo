@@ -31,7 +31,7 @@ Instalación rápida de dependencias:
 pip install -r requirements.txt
 
 
-### 🔹 Explicación de cada carpeta y archivo
+## 🔹 Explicación de cada carpeta y archivo
 
 **scripts/**  
 - Contiene todos los scripts de Python principales y auxiliares.  
