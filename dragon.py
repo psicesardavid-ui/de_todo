@@ -15,15 +15,43 @@ class Dragon:
         time.sleep(1)
 
 
+num_dragones = 80
+luchadores = []
 
+for i in range(num_dragones):
+    luchadores.append(f"Dragón (i+1)")
+    
+print(len(luchadores))
+
+luchadores[70].vida = 0
+
+for luchador in luchadores:
+    if luchador.vida == 0:
+        muertito = luchador
+        
+quita_al_muerto()
+
+def quita_al_muerto():
+    for luchador in luchadores:
+        if luchador.nombre == muertito.nombre:
+            luchadores.remove(luchador)
+
+    
+    
 dragon_1 = Dragon("Smaug")
 dragon_2 = Dragon("Drogon")
+dragon_3 = Dragon("Fafnir")
+dragon_4 = Dragon("Viserion")
 
-luchadores = [dragon_1, dragon_2]
+luchadores = [dragon_1, dragon_2, dragon_3, dragon_4]
 random.shuffle(luchadores)
 
 atacante_inicial = luchadores[0]
 segundo_atacante = luchadores[1]
+tercer_atacante = luchadores[2]
+cuarto_atacante = luchadores[3]
+
+
 
 print("--- ¡COMIENZA LA BATALLA! ---")
 print(f"{atacante_inicial.nombre} tiene la iniciativa y ataca primero.")
@@ -40,3 +68,4 @@ print(f"\n" + "="*30)
 print(f"¡EL VENCEDOR ES {ganador.nombre.upper()}!")
 print(f"Vida restante: {ganador.vida}")
 print("="*30)
+

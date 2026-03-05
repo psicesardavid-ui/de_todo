@@ -8,7 +8,7 @@ servidor_activo = True
 def manejar_jugador(conn, addr):
     print(f"[CONEXION] Alumno conectado: {addr}")
     vida_p = 100
-    vida_jefe = 150
+    vida_jefe = 100
     duelo_activo = True
 
     def jefe_ataca():
