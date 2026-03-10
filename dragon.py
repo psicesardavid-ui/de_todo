@@ -29,7 +29,8 @@ for luchador in luchadores:
     if luchador.vida == 0:
         muertito = luchador
         
-quita_al_muerto()
+        
+
 
 def quita_al_muerto():
     for luchador in luchadores:
